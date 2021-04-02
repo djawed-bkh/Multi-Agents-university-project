@@ -6,12 +6,20 @@
 package dctw;
 
 import javax.swing.JPanel;
+import jade.core.AID;
+import jade.core.Agent;
+import jade.core.behaviours.OneShotBehaviour;
+import jade.lang.acl.ACLMessage;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author DJAWED
  */
-public class Fucnction {
+public class Fucnction extends Agent {
     
     
     public static void ChangePanel(JPanel mainPanel ,JPanel panel){
@@ -20,6 +28,23 @@ public class Fucnction {
             mainPanel.repaint();
             mainPanel.revalidate();
         }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+     
     
     
 }

@@ -5,6 +5,10 @@
  */
 package Views;
 
+import dctw.Agent1;
+import dctw.AgentInitiateur;
+import dctw.Localisation;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -199,7 +203,7 @@ public class Acceuil extends javax.swing.JFrame {
                 JButton_Envoie_PerformanceActionPerformed(evt);
             }
         });
-        jPanel_Initiateur.add(JButton_Envoie_Performance, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 210, 50));
+        jPanel_Initiateur.add(JButton_Envoie_Performance, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 360, 210, 50));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
@@ -290,7 +294,36 @@ public class Acceuil extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel_Agent4MousePressed
 
     private void JButton_Envoie_PerformanceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JButton_Envoie_PerformanceActionPerformed
-        // code jade 
+        ArrayList<Localisation> tableau= new ArrayList<>();
+        
+        tableau.add(new Localisation(1.00,0.99,2,6,1867,10,0.68));
+        tableau.add(new Localisation(1.00,0.98,2,6,1957,10,0.71));
+        tableau.add(new Localisation(1.00,0.97,2,6,2047,10,0.70));
+        tableau.add(new Localisation(0.85,0.97,2,6,2147,10,0.69));
+        tableau.add(new Localisation(1.00,0.93,2,6,2233,9,0.67));
+        tableau.add(new Localisation(0.50,0.96,2,6,2185,12,0.84));
+        tableau.add(new Localisation(1.00,0.67,2,6,2220,9,0.68));
+        tableau.add(new Localisation(1.00,0.15,4,6,1832,11,0.71));
+        tableau.add(new Localisation(0.99,0.55,4,6,1906,10,0.74));
+        tableau.add(new Localisation(0.98,0.27,4,6,2037,10,0.75));
+        tableau.add(new Localisation(1.00,0.96,4,6,2232,13,0.86));
+        tableau.add(new Localisation(0.95,0.69,4,6,2186,5,0.78));
+        tableau.add(new Localisation(1.00,0.62,6,3,1911,10,0.70));
+        tableau.add(new Localisation(0.40,1.00,6,3,2070,6,0.85));
+        tableau.add(new Localisation(1.00,1.00,6,3,2142,6,0.85));
+        tableau.add(new Localisation(1.00,0.98,6,6,1648,10,0.84));
+        tableau.add(new Localisation(0.70,0.98,6,6,1756,10,0.68));
+        tableau.add(new Localisation(1.00,0.98,6,6,1821,10,0.83));
+        
+        dctw.AgentInitiateur init= new AgentInitiateur();
+        
+        
+        dctw.Agent1 agent1= new Agent1();
+        dctw.AgentInitiateur AgentInitiateur=new AgentInitiateur();
+        agent1.recepteur();
+        AgentInitiateur.SendMatricePerformance();
+        System.out.println("haja srat");
+       
     }//GEN-LAST:event_JButton_Envoie_PerformanceActionPerformed
 
     /**

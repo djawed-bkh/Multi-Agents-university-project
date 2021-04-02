@@ -5,6 +5,7 @@
  */
 package dctw;
 
+import Views.Acceuil;
 import jade.core.Agent;
 
 /**
@@ -13,11 +14,6 @@ import jade.core.Agent;
  */
 public class DCTW extends Agent {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        
-    }
+    
     
 }
